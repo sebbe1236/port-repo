@@ -1,0 +1,12 @@
+.contact_container div {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  text-align: center;
+}
+
+.contact_container p {
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 10px;
+}

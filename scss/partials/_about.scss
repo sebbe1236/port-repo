@@ -1,0 +1,16 @@
+.about_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.about_container img {
+  border-radius: 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.about_container div,
+p {
+  padding: 20px;
+}
