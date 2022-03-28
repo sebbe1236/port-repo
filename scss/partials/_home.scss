@@ -1,8 +1,12 @@
-.intro_container {
+/*.intro_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 30px;
   align-items: center;
+}*/
+
+.intro_container {
+  text-align: center;
 }
 
 .content_container {
