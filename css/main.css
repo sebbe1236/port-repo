@@ -170,12 +170,12 @@ a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-content {
+.modal_content {
   margin: auto;
   margin-top: 50px;
   display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 #caption {
@@ -183,7 +183,7 @@ a {
   color: #ccc;
 }
 
-.modal-content,
+.modal_content,
 #caption {
   -webkit-animation-name: zoom;
           animation-name: zoom;
@@ -275,6 +275,10 @@ nav ul {
 .logo_container {
   text-align: center;
   padding: 15px;
+}
+
+.nav-link.active {
+  text-decoration: underline;
 }
 
 @media (max-width: 850px) {
