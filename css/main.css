@@ -134,10 +134,100 @@ h3 {
 
 .selectedprojects_container div {
   padding: 10px;
+  text-align: center;
 }
 
 .selectedprojects_container img {
   width: 100%;
+}
+
+.selectedprojects_container h4,
+a {
+  text-align: center;
+}
+
+#myImgid {
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#myImgid:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+#caption {
+  text-align: center;
+  color: #ccc;
+}
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.closemodal {
+  position: absolute;
+  right: 40px;
+  color: #f1f1f1;
+  font-size: 45px;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.closemodal:hover,
+.closemodal:focus {
+  color: #bdb2b2;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 header {
@@ -232,6 +322,9 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .close {
+    right: 15px;
   }
 }
 

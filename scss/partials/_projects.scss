@@ -18,8 +18,82 @@
 }
 .selectedprojects_container div {
   padding: 10px;
+  text-align: center;
 }
 
 .selectedprojects_container img {
   width: 100%;
+}
+.selectedprojects_container h4,
+a {
+  text-align: center;
+}
+
+#myImgid {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#myImgid:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+#caption {
+  text-align: center;
+  color: #ccc;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.8s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.closemodal {
+  position: absolute;
+
+  right: 40px;
+  color: #f1f1f1;
+  font-size: 45px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.closemodal:hover,
+.closemodal:focus {
+  color: rgb(189, 178, 178);
+  text-decoration: none;
+  cursor: pointer;
 }
