@@ -21,6 +21,16 @@
   text-align: center;
 }
 
+.selectedprojects_container a,
+.projects_container a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+main a:hover {
+  text-transform: uppercase;
+}
+
 .selectedprojects_container img {
   width: 100%;
 }
